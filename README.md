@@ -1,3 +1,7 @@
+
+
+https://github.com/user-attachments/assets/290af72a-0577-41cc-8f61-1dd6e6a5eb95
+
 # Allwinner A13 / R8 BareMetal SDK
 
 **Ultra-fast, high-performance bare-metal framework written completely from scratch in C and Assembly for the Allwinner A13 / R8 SoC (`sun5i` / PocketCHIP).**
