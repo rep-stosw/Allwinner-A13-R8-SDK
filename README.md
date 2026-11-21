@@ -1,37 +1,39 @@
 # Allwinner A13 / R8 BareMetal SDK
 
+![Architecture](https://img.shields.io/badge/Architecture-ARM_Cortex--A8-blue)
+![SoC](https://img.shields.io/badge/SoC-Allwinner_A13_R8-orange)
+![Language](https://img.shields.io/badge/Language-C_&_Assembly-brightgreen)
+![Boot Time](https://img.shields.io/badge/Boot_Time-Sub--Second-red)
+
 **Ultra-fast, high-performance bare-metal framework written completely from scratch in C and Assembly for the Allwinner A13 / R8 SoC (`sun5i` / PocketCHIP).**
 
 Designed for mission-critical embedded applications requiring sub-second boot times, zero OS overhead, and direct hardware register control. Includes custom SPL bootloaders (USB, SD, SPI NOR), hardware-accelerated H.264 Cedar Video Engine, Mali-400 GPU initialization, multi-layer Display Engine, and low-latency digital audio.
 
 ## Real Hardware Demonstration
 
-* Watch Demo Video 1:
-
-https://github.com/user-attachments/assets/b539e422-f6e2-4604-95e7-118be087c84e
-
-* Watch Demo Video 2:
-
-https://github.com/user-attachments/assets/290af72a-0577-41cc-8f61-1dd6e6a5eb95
-
-## Project Directory Structure
-![Project Structure](structure.png)
+| Mali-400 GPU 3D Hardware Rendering (R8 SoC) | Mali-400 GPU 3D Hardware Rendering (A13 SoC) |
+| :---: | :---: |
+| [https://github.com](https://github.com/user-attachments/assets/b539e422-f6e2-4604-95e7-118be087c84e) | [https://github.com](https://github.com/user-attachments/assets/290af72a-0577-41cc-8f61-1dd6e6a5eb95) |
 
 The complete SDK includes the following 13 production-ready components:
 
-1. **MemTest** — DRAM calibration and stability stress-test utility.
-2. **LoaderUSB** — Custom first-stage USB bootloader for direct RAM execution.
-3. **Tiny(APP)** — Minimalist template for core SoC clock/PLL setup and UART debugging.
-4. **Audio(APP)** — Low-latency digital audio pipeline for internal SoC DAC/ADC.
-5. **LCD(APP)** — Direct Display Engine (DE) control with multi-layer hardware blending.
-6. **LCD(APP)** — Alternative display timing configuration and layout.
-7. **FatFs(APP)** — High-speed filesystem integration for SD cards and Flash media.
-8. **H264(APP)** — Hardware-accelerated video decoding/encoding via Cedar Video Engine.
-9. **LoaderSD** — Secure Digital card bootloader (SPL) for MMC media booting.
-10. **H264_Sprites_LRADC_SPI_NOR(APP)** — Combined production firmware running entirely from SPI NOR Flash.
-11. **Mali400(APP)** — Pure bare-metal hardware registers initialization for the Mali-400 GPU core.
-12. **LoaderNOR_SPL** — Ultra-compact SPL optimized for SPI NOR Flash layout.
-13. **H264_Sprites_LRADC_SPI_SD_RAM(APP)** — Ultimate system layout running with active SD/RAM data caching.
+## SDK Components
+
+| Category | Module | Technical Capabilities |
+| :--- | :--- | :--- |
+| **Bootloaders** | `LoaderUSB` | Custom first-stage USB (FEL) bootloader for direct RAM execution |
+| **Bootloaders** | `LoaderSD` | Secure Digital card bootloader (SPL) for MMC media booting |
+| **Bootloaders** | `LoaderNOR_SPL` | Ultra-compact SPL optimized for SPI NOR Flash layout |
+| **Graphics & Video** | `Mali400(APP)` | Pure bare-metal register initialization for Mali-400 GPU core |
+| **Graphics & Video** | `H264(APP)` | Hardware-accelerated video decoding/encoding via Cedar Video Engine |
+| **Graphics & Video** | `LCD_Primary(APP)` | Direct Display Engine (DE) control with multi-layer hardware blending |
+| **Graphics & Video** | `LCD_Alt(APP)` | Alternative display timing configuration and custom framebuffer layout |
+| **Audio & Storage** | `Audio(APP)` | Low-latency digital audio pipeline for internal SoC DAC/ADC |
+| **Audio & Storage** | `FatFs(APP)` | High-speed filesystem integration for SD cards and Flash media |
+| **Core & System** | `MemTest` | DRAM calibration, cache setup, and stability stress-test utility |
+| **Core & System** | `Tiny(APP)` | Minimalist template for core SoC clock/PLL setup and UART debugging |
+| **Production** | `H264_Sprites_LRADC_SPI_NOR(APP)` | Combined production firmware running entirely from SPI NOR Flash |
+| **Production** | `H264_Sprites_LRADC_SPI_SD_RAM(APP)` | Ultimate system layout with active SD/RAM data caching |
 
 ## Need the SDK?
 If you require the complete production-ready source code, custom linker scripts, startup codes, and compilation toolchains, please contact the lead architect directly:
