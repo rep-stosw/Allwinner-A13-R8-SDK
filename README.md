@@ -11,13 +11,22 @@ Designed for mission-critical embedded applications requiring sub-second boot ti
 
 ## Real Hardware Demonstration
 
-| Mali-400 GPU 3D Hardware Rendering (R8 SoC) | Mali-400 GPU 3D Hardware Rendering (A13 SoC) |
-| :---: | :---: |
-| [https://github.com](https://github.com/user-attachments/assets/b539e422-f6e2-4604-95e7-118be087c84e) | [https://github.com](https://github.com/user-attachments/assets/290af72a-0577-41cc-8f61-1dd6e6a5eb95) |
+<table>
+  <tr>
+    <th width="50%" align="center">Mali-400 GPU Rendering (R8 SoC)</th>
+    <th width="50%" align="center">Mali-400 GPU Rendering (A13 SoC)</th>
+  </tr>
+  <tr>
+    <td align="center" valign="middle">
+      <video src="https://github.com/user-attachments/assets/b539e422-f6e2-4604-95e7-118be087c84e" controls width="100%"></video>
+    </td>
+    <td align="center" valign="middle">
+      <video src="https://github.com/user-attachments/assets/290af72a-0577-41cc-8f61-1dd6e6a5eb95" controls width="100%"></video>
+    </td>
+  </tr>
+</table>
 
-The complete SDK includes the following 13 production-ready components:
-
-## SDK Components
+## The complete SDK includes the following production-ready components:
 
 | Category | Module | Technical Capabilities |
 | :--- | :--- | :--- |
