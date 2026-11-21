@@ -40,6 +40,6 @@ https://github.com/user-attachments/assets/290af72a-0577-41cc-8f61-1dd6e6a5eb95
 ## Need the SDK?
 If you require the complete production-ready source code, custom linker scripts, startup codes, and compilation toolchains, please contact the lead architect directly:
 
-* **Email:** [repstosw2018@gmail.com]
+> ### **Email: repstosw2018@gmail.com**
 
 *Direct engineer-to-engineer source transfer.*
