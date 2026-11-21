@@ -5,25 +5,11 @@
 Designed for mission-critical embedded applications requiring sub-second boot times, zero OS overhead, and direct hardware register control. Includes custom SPL bootloaders (USB, SD, SPI NOR), hardware-accelerated H.264 Cedar Video Engine, Mali-400 GPU initialization, multi-layer Display Engine, and low-latency digital audio.
 
 ## Real Hardware Demonstration
-* Watch Demo Video 1: https://www.youtube.com/watch?v=l3JJENnSXQ8
-  
-
-https://githu
-
+* Watch Demo Video 1:
 https://github.com/user-attachments/assets/b539e422-f6e2-4604-95e7-118be087c84e
 
-
-
+* Watch Demo Video 2:
 https://github.com/user-attachments/assets/61212576-08dc-4903-8976-7829025ef200
-
-b.com/user-attachments/assets/8e9413f4-6bce-409f-ae9f-45b6d71fabe0
-
-
-
-https://github.com/user-attachments/assets/efad227e-305b-45a8-96ea-164b1abaa015
-
-
-* Watch Demo Video 2: https://www.youtube.com/watch?v=YOuBfTe-7Lk
 
 ## Project Directory Structure
 ![Project Structure](structure.png)
