@@ -19,6 +19,10 @@ https://github.com/user-attachments/assets/b539e422-f6e2-4604-95e7-118be087c84e
 
 https://github.com/user-attachments/assets/290af72a-0577-41cc-8f61-1dd6e6a5eb95
 
+### 3. JPEG Decoder (13 SoC)
+
+https://github.com/user-attachments/assets/91e4b974-00a9-4b4d-8f50-d4b59a90d865
+
 ## The complete SDK includes the following production-ready components:
 
 | Category | Module | Technical Capabilities |
